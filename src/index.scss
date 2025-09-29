@@ -1,0 +1,28 @@
+@use "~bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: "SUSEMono";
+    src: url(#fonts/SUSE_Mono/SUSEMono.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --base-white: #e5e4e2;
+    --base-black: #1e1e1e;
+}
+
+:root[data-theme="light"] {
+    --theme-main: var(--base-white);
+    --theme-second: var(--base-black);
+}
+
+:root[data-theme="dark"] {
+    --theme-main: var(--base-black);
+    --theme-second: var(--base-white);
+}
+
+body {
+    background-color: var(--theme-main);
+    color: var(--theme-second);
+}

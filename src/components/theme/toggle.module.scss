@@ -1,0 +1,33 @@
+.toggle {
+    width: 120px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: var(--theme-second);
+    background-color: var(--theme-second);
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    color: var(--theme-main);
+    z-index: 2;
+    &__active {
+        color: var(--theme-second);
+    }
+}
+
+.circel {
+    position: absolute;
+    background-color: var(--theme-main);
+    // border: 1px solid var(--theme-second);
+    width: 66px;
+    height: 46px;
+    border-radius: 46px;
+    transform: translateX(0px);
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+    &__active {
+        transform: translateX(50px);
+    }
+}

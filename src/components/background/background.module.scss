@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    color: var(--theme-second);
+}
+
+.spin {
+    animation: spin 10s linear infinite;
+    animation-delay: calc(var(--seed, 0) * 1s);
+}
+
+.twinkle {
+    animation: twinkle 1.5s infinite alternate;
+    animation-delay: calc(var(--seed, 0) * 1s);
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

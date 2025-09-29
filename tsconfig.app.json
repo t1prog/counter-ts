@@ -26,9 +26,11 @@
 
         //alias
         "paths": {
+            "~bootstrap": ["./node_modules/bootstrap"],
             "#components/*": ["./src/components/*"],
             "#context/*": ["./src/context/*"],
             "#svg/*": ["./assets/svg/*"],
+            "#fonts": ["./src/assets/fonts"],
             "#utils/*": ["./src/utils/*"],
             "#hooks/*": ["./src/hooks/*"],
             "#providers/*": ["./src/providers/*"]

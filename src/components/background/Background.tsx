@@ -48,11 +48,17 @@ const Background = ({ children }: BackgroundProps) => {
     }, [updateSize]);
 
     // Как долго я это делал.. И ради чего?
-    const points = useGeneratedPoints(containerSize, 200, 35, 40);
+    // Это созвездие
+    // const constellation = useGeneratedPoints(containerSize, 90, 20, 40);
 
+    // base
+    const stars = useGeneratedPoints(containerSize, 300, 15, 40);
+
+    //u cant play
+    // const singleStars = useGeneratedPoints(containerSize, 300, 15, 40);
     return (
         <div ref={containerRef} className={clsx(styles.container)}>
-            {points.map((point, index) => (
+            {stars.map((point, index) => (
                 <BackgroundStar key={index} point={point} />
             ))}
             {children}

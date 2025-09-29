@@ -1,6 +1,5 @@
 import { useMemo } from "react";
-import { generatePoints } from "#utils/generatePoissonPoints";
-import type { Point } from "#utils/generatePoissonPoints";
+import { generatePoints, type Point } from "#utils/generatePoints";
 
 type Size = { w: number; h: number };
 

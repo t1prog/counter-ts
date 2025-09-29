@@ -30,7 +30,8 @@
             "#context/*": ["./src/context/*"],
             "#svg/*": ["./assets/svg/*"],
             "#utils/*": ["./src/utils/*"],
-            "#hooks/*": ["./src/hooks/*"]
+            "#hooks/*": ["./src/hooks/*"],
+            "#providers/*": ["./src/providers/*"]
         }
     },
     "include": ["src"]

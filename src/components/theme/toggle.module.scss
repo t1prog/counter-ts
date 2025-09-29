@@ -5,6 +5,11 @@
     border-radius: 25px;
     border-color: var(--theme-second);
     background-color: var(--theme-second);
+    transition: box-shadow 0.5s ease;
+}
+
+.toggle:hover {
+    box-shadow: 0 0 5px 2px var(--theme-second);
 }
 
 .img {
@@ -20,7 +25,6 @@
 .circel {
     position: absolute;
     background-color: var(--theme-main);
-    // border: 1px solid var(--theme-second);
     width: 66px;
     height: 46px;
     border-radius: 46px;

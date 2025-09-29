@@ -21,6 +21,7 @@ export default defineConfig({
             "#fonts": path.resolve(__dirname, "./src/assets/fonts"),
             "#svg": path.resolve(__dirname, "./src/assets/svg"),
             "#utils": path.resolve(__dirname, "./src/utils"),
+            "#providers": path.resolve(__dirname, "./src/providers"),
             "#hooks": path.resolve(__dirname, "./src/hooks"),
         },
     },
